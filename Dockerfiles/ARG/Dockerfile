@@ -1,5 +1,5 @@
 ARG version
-FROM almalinux:${version: -8} #default version value is 8
+FROM almalinux:${version:-8} #default version value is 8
 ARG username
 RUN adduser $username
 ARG COURSE
